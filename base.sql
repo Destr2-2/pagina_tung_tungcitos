@@ -1,12 +1,13 @@
-create database tungtung;
-use tungtung;
+CREATE DATABASE tungtung;
+USE tungtung;
 
-create table usuarios(
-id_usuario int auto_increment primary key,
-nombre varchar(40) not null,
-apellidos varchar(40) not null,
-usuario varchar(30) not null,
-contra varchar(20) not null,
-f_nacimiento date not null
+CREATE TABLE usuarios(
+    id_usuario INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(50) NOT NULL,
+    usuario VARCHAR(30) NOT NULL,
+    nombre VARCHAR(40) NOT NULL,
+    apellidos VARCHAR(40) NOT NULL,
+    f_nacimiento DATE NOT NULL,
+    contra VARCHAR(20) NOT NULL,
+    telefono VARCHAR(15) NOT NULL
 );
-
